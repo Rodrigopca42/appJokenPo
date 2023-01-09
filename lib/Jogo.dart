@@ -28,7 +28,11 @@ class _JogoState extends State<Jogo> {
               ),
             ),
           ),
-          Image.asset("images/padrao.png"),
+          GestureDetector(
+            onTap: (){print("Um clique na imagem!"); },
+            onDoubleTap: (){print("Dois cliques na imagem!"); },
+            child: Image.asset("images/padrao.png"),
+          ),
           Padding(
             padding: EdgeInsets.only(top: 32, bottom: 16),
             child: Text(
